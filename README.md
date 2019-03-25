@@ -18,3 +18,7 @@ Open source Android VPN App, based on OpenVPN protocol. Uses MVP as coding patte
   - SweetAlertDialog - beaty dialogs with custom animation
   - butterknife - fast access to View
   - mosby3 - most clean MVP pattern
+
+
+Feel free to contact me:
+email: artembogomaz@gmail.com
