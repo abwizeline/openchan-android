@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/firstFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:text="Your Token"
+            android:textAllCaps="true"
+            android:textColor="#CCCCCC" />
+
+        <EditText
+            android:id="@+id/et_token"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:textSize="18dp"
+            android:paddingLeft="10dp"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:background="@android:color/transparent">
+            <requestFocus />
+        </EditText>
+    </FrameLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F2FAFF</color>
+    <color name="colorPrimaryDark">#0087c7</color>
+    <color name="colorAccent">#F2FAFF</color>
+
+    <color name="colorbtnOn">#6A9A3B</color>
+    <color name="colorbtnOff">#77AD42</color>
+
+    <color name="colorpassword">#D8EACA</color>
+
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGray">#FFBFBEBE</color>
+    <color name="backgound">#FEF4F2</color>
+    <color name="nav_bar_bottom">#fafafa</color>
+    <color name="green">#228B22</color>
+    <color name="yellow">#FF8C00</color>
+    <color name="switch_on_color">#5BDE5E</color>
+    <color name="switch_off_color">#FF8080</color>
+    <color name="switch_conn_color">#dd934b</color>
+    <color name="color_bblue">#0086C3</color>
+
+    <color name="color1">#E5F4FC</color>
+    <color name="color2">#D9EEF9</color>
+    <color name="color3">#CDE8F6</color>
+    <color name="color4">#C2E3F3</color>
+    <color name="color5">#B8DEF0</color>
+</resources>

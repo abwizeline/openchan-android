@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.digiapp.openchan">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name=".AppObj"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <receiver
+            android:name="com.my.tracker.campaign.CampaignReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.device.iap.ResponseReceiver">
+            <intent-filter>
+                <action
+                    android:name="com.amazon.inapp.purchasing.NOTIFY"
+                    android:permission="com.amazon.inapp.purchasing.Permission.NOTIFY" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.my.tracker.campaign.CampaignService" />
+
+        <meta-data
+            android:name="com.appsee.ApiKey"
+            android:value="9ba4f56aebfd4358ba934f561fb4eba7" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
+            android:value="true" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_appid" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="b8fa726b2c0020a71ba37c2ead24dd6a3deec842" />
+
+        <!-- OpenVPN -->
+
+        <service
+            android:name="de.blinkt.openvpn.core.OpenVPNService"
+            android:exported="false"
+            android:permission="android.permission.BIND_VPN_SERVICE"
+            android:process=":openvpn">
+            <intent-filter>
+                <action android:name="android.net.VpnService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="de.blinkt.openvpn.api.ExternalOpenVPNService"
+            android:exported="false"
+            android:process=":openvpn"
+            tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="de.blinkt.openvpn.api.IOpenVPNAPIService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="de.blinkt.openvpn.core.OpenVPNStatusService"
+            android:exported="false"
+            android:process=":openvpn" />
+
+        <activity
+            android:name="de.blinkt.openvpn.api.ConfirmDialog"
+            android:screenOrientation="${screenOrientation}">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="de.blinkt.openvpn.OpenVPNTileService"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="Tile Service"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
+            android:value="true">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.service.quicksettings.ACTIVE_TILE"
+                android:value="false" />
+        </service>
+
+        <activity android:name="de.blinkt.openvpn.activities.DisconnectVPN" />
+        <activity
+            android:name="de.blinkt.openvpn.api.GrantPermissionsActivity"
+            android:screenOrientation="${screenOrientation}">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".services.BootReceiver">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".services.CommandsReceiver">
+            <intent-filter>
+                <action android:name="com.digiapp.vpn.action.on" />
+                <action android:name="com.digiapp.vpn.action.off" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".viewMain.view.MainActivity"
+            android:screenOrientation="${screenOrientation}"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

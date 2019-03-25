@@ -1,0 +1,33 @@
+apply plugin: 'com.android.library'
+
+android {
+    signingConfigs {
+        release {
+            keyAlias 'clearsoftwareltd'
+            keyPassword 'fhntvbb'
+            storeFile file('/Users/artem/Documents/GIT/ClearSoftwareLtd_Android')
+            storePassword 'fhntvbb'
+        }
+    }
+    compileSdkVersion 28
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        minSdkVersion 9
+    }
+    lintOptions {
+        abortOnError false
+    }
+    dexOptions {
+        incremental true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'com.pnikosis:materialish-progress:1.0'
+}
+
+//apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'

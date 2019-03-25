@@ -1,0 +1,229 @@
+<resources>
+    <string name="app_name" translatable="false">Openchan</string>
+
+    <!-- Guide screens -->
+    <string-array name="guide_title">
+        <item>Optimize Internet connection</item>
+        <item>Access blocked content</item>
+        <item>Secured connection</item>
+    </string-array>
+
+    <string-array name="guide_description">
+        <item>Accelerate surfing speed\nto the maximum</item>
+        <item>Quickly access blocked and censored\nwebsites and apps</item>
+        <item>Protect Internet connection and\nencrypt personal information</item>
+    </string-array>
+    <!-- Connection strings -->
+
+    <string name="tutorial_first_title">Optimize Internet connection</string>
+    <string name="tutorial_first_sub">Accelerate surfing speed\nto the maximum</string>
+
+    <string name="LEVEL_START">Started</string>
+    <string name="LEVEL_CONNECTED">Connected</string>
+    <string name="LEVEL_AUTH_FAILED">Auth failed</string>
+    <string name="LEVEL_NONETWORK">No network</string>
+    <string name="LEVEL_NOTCONNECTED">Not connected</string>
+    <string name="LEVEL_CONNECTING_NO_SERVER_REPLY_YET">No server response</string>
+    <string name="LEVEL_WAITING_FOR_USER_INPUT">Waiting for user</string>
+    <string name="LEVEL_CONNECTING_SERVER_REPLIED">Server replied</string>
+    <string name="LEVEL_VPNPAUSED">VPN Paused</string>
+    <string name="UNKNOWN_LEVEL">Unknown</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_check_ip">Check my IP</string>
+    <string name="action_speed_test">Speed Test</string>
+    <string name="action_refresh_payment">Refresh Payment</string>
+    <string name="txtInfo">Secure connection hides real location and encrypts all data sent and received by your Desktop</string>
+    <string name="btnStart">CONNECT</string>
+    <string name="btnStop">DISCONNECT</string>
+    <string name="new_version">New version available, want to update? </string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Core -->
+    <string name="txt_exit">Want to exit?</string>
+    <string name="txt_yes">Yes</string>
+    <string name="txt_no">No</string>
+    <string name="txt_disconnected">DISCONNECT</string>
+    <string name="txt_connecting">Connecting</string>
+    <string name="txt_connected">Connected</string>
+
+    <!-- Intro Fragment -->
+    <string name="start_trial">Start 7-days Trial</string>
+
+    <!-- AppSelectorActivity -->
+    <string name="title_appselector">Connection per App</string>
+
+    <!-- navigation drawer -->
+    <string name="rate_us_str">Rate us</string>
+    <string name="tell_your_str">Tell your friends</string>
+    <string name="follow_twitter">Follow in Twitter</string>
+    <string name="like_facebook">Like in Facebook</string>
+    <string name="ref_code">Referral Code</string>
+    <string name="settings_str">Settings</string>
+    <string name="faq_str">FAQ</string>
+    <string name="privacy_str">Privacy Policy</string>
+    <string name="terms_str">Terms of Service</string>
+    <string name="update_str">Check for updates</string>
+    <string name="txt_ref">Enter referral code</string>
+
+    <!-- Subsription -->
+    <string name="txt_protect">Protect your Android phone \nand Android tablet</string>
+    <string name="txt_devices">Up to 5 devices connected at the\nsame time</string>
+    <string name="billing_exp">Your billing expired</string>
+    <string name="one_year">1 Year</string>
+    <string name="six_months">6 Months</string>
+    <string name="one_month">1 Month</string>
+    <string name="fetching_billing">Fetching InApp billing details</string>
+    <string name="txt_subscribe">Purchase</string>
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="list_restore_purchases">
+        <item>Google Play</item>
+        <item>Promo Code</item>
+        <item>Email/Password</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+    <string name="pref_title_vibrate">Vibrate</string>
+
+    <!-- Profiles Activity -->
+    <string name="title_profiles_activity">Locations</string>
+    <string name="txt_update">REFRESH</string>
+    <string name="automatic_item">Automatic</string>
+
+    <!-- settings screen -->
+    <string name="general_title">General</string>
+    <string name="one_click_title">1-click connect</string>
+    <string name="one_click_close_title">Close App when connected</string>
+    <string name="one_click_close_desc">Close App when successfully connected to VPN</string>
+    <string name="one_click_desc">Connect when application is started</string>
+    <string name="on_boot_title">Connect on boot</string>
+    <string name="on_boot_desc">Connect when device is booted</string>
+    <string name="connection_title">Connection</string>
+    <string name="insecure_wifi_title">Auto-connect on insecure Wi-Fi</string>
+    <string name="insecure_wifi_desc">BelkaVPN will detect that you are connecting to an open WiFi network and your BelkaVPN will automatically start VPN with secure tunnel </string>
+    <string name="limitbyapps_title">Limit by Apps</string>
+    <string name="split_title">Split Apps</string>
+    <string name="split_desc">Select the apps that will use VPN</string>
+    <string name="about_title">About</string>
+    <string name="show_not_title">Show notification</string>
+    <string name="show_not_desc">Show notification with connection details</string>
+    <string name="app_ver_title">App version</string>
+    <string name="send_logs">Send logs for Developer</string>
+    <string name="sel_apps_title">Selected Apps</string>
+
+    <!-- general -->
+    <string name="please_wait">Please wait...</string>
+    <string name="checking_wait">Checking, please wait...</string>
+    <string name="not_available">Not available</string>
+    <string name="txt_oops">Oops...</string>
+    <string name="no_internet">No Internet, please check connection</string>
+    <string name="try_again">Try again</string>
+    <string name="goes_wrong">Something goes wrong, please try again</string>
+    <string name="txt_dialog_title">Dialog</string>
+    <string name="txt_ref_code_text">Share your referral code to get 7 EXTRA DAYS FREE once your friends activate your code, and they will get 7 DAYS EXTRA FREE</string>
+
+
+    <!-- Login screen -->
+    <string name="info_message1">Oops, something goes wrong with login, please try again</string>
+    <string name="restore_purch">Restore purchases</string>
+    <string name="billing_not">Billing service unavailable on device.</string>
+    <string name="auth_failed">Authentication failed.</string>
+    <string name="no_purchases">You don\'t have any purchases</string>
+    <string name="txt_already_purchased">ALREADY PURCHASED</string>
+
+    <!-- openvpn service -->
+    <string name="belkav_vpn_serv_started">Openchan service started</string>
+
+    <!-- utils -->
+    <string name="goes_wrong_profiles">Something goes wrong with VPN Profiles</string>
+    <string name="cancel">Cancel</string>
+    <string name="connecting">Connecting</string>
+
+    <!-- startvpn fragment -->
+    <string name="connected">Connected</string>
+    <string name="loading_serv">Loading server params</string>
+    <string name="auto_location">Automatic location</string>
+
+
+    <!-- register activity -->
+    <string name="hint_email">Email</string>
+    <string name="hint_psw">Password</string>
+    <string name="hint_psw_confirm">Confirm Password</string>
+    <string name="txt_already_reg">Already registered?</string>
+    <string name="txt_forgotpsw">Forgot password?</string>
+    <string name="txt_type_psw">Please, enter your email</string>
+    <string name="txt_register">New User?</string>
+    <string name="err_wrong_psw">Passwords doesn\'t match</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_login">Log In</string>
+    <string name="err_email_req">Email required</string>
+    <string name="err_fields_empty">All fields required</string>
+    <string name="err_wrong_email">Wrong email</string>
+    <string name="inf_pass_reset">Password reset request sent, please wait confirmation email</string>
+
+    <!-- codes -->
+    <string name="facebook_app_id">912273795631857</string>
+    <string name="fb_login_protocol_scheme">fb912273795631857</string>
+    <string name="appsee_key">9ba4f56aebfd4358ba934f561fb4eba7</string>
+    <string name="request_google_token">982710052314-3rggq682cln6futun742pr2s30ql3ojr.apps.googleusercontent.com</string>
+    <string name="appsflyer_key">6ebhxQ9SLuLqDRAUuNdtFj</string>
+    <string name="my_target_id">66087357323480419077</string>
+
+    <string name="admob_appid">ca-app-pub-8430443949668490~4817108069</string>
+    <string name="admob_banner_signin">ca-app-pub-8430443949668490/4566784481</string>
+    <string name="admob_banner_startvpn">ca-app-pub-8430443949668490/4706385280</string>
+
+    <!-- speed test -->
+    <string name="testingTxt">Testing: </string>
+    <string name="latencyTxt">Latency</string>
+    <string name="downloadTxt">Download</string>
+    <string name="uploadTxt">Uploading</string>
+    <string name="pingHeaderTxt">Ping:</string>
+    <string name="downloadHeaderTxt">Download:</string>
+    <string name="uploadHeaderTxt">Upload:</string>
+    <string name="jitterHeaderTxt">Jitter:</string>
+    <string name="shareTxt">shareTxt</string>
+    <string name="testAgainTxt">testAgainTxt</string>
+
+    <string name="summaryCategoryTxt1">summaryCategoryTxt1</string>
+    <string name="summaryCategoryTxt2">summaryCategoryTxt2</string>
+    <string name="summaryCategoryTxt3">summaryCategoryTxt3</string>
+    <string name="summaryCategoryTxt4">summaryCategoryTxt4</string>
+    <string name="summaryCategoryTxt5">summaryCategoryTxt5</string>
+
+</resources>

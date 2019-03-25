@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.digiapp.openchan.models.others.ViewShapedBackground xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".viewMain.view.MainActivity">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-20dp"
+        android:src="@drawable/big_logo" />
+
+    <ImageView
+        android:id="@+id/balloon_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imgLogo"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/balloon_2" />
+
+    <ImageView
+        android:id="@+id/balloon_1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/balloon_2"
+        android:layout_marginTop="-10dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/balloon_1" />
+
+    <ImageView
+        android:id="@+id/balloon_3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/balloon_2"
+        android:layout_marginTop="-10dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/balloon_3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.digiapp.openchan.models.circleButton.CuboidButton
+            android:id="@+id/startStopVPN"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="50dp"
+            android:layout_centerInParent="true"
+            app:cub_border_color="@color/switch_off_color"
+            app:cub_border_radius="6dp"
+            app:cub_color="@color/colorWhite"
+            app:cub_icon="@drawable/switch_off"
+            app:cub_riple_effect="false" />
+
+        <TextView
+            android:id="@+id/vpnStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/startStopVPN"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Press to connect VPN"
+            android:textColor="@color/switch_off_color"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <!-- android:drawableLeft="@drawable/check_icon" -->
+        <Button
+            android:id="@+id/btnDnsStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vpnStatus"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textAllCaps="false"
+            android:background="@drawable/button_background_selector"
+            android:visibility="gone"
+            android:shadowColor="@android:color/transparent"
+            android:text="Switch to Openchan DNS"
+            android:textColor="@color/switch_off_color" />
+
+        <LinearLayout
+            android:id="@+id/changeDNS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnDnsStatus"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/btnToken"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/button_background_selector"
+                android:drawableLeft="@drawable/combine_shape"
+                android:paddingLeft="23dp"
+                android:shadowColor="@android:color/transparent"
+                android:text="Token"
+                android:textAllCaps="false"
+                android:drawablePadding="-28sp"
+                android:textColor="@color/color_bblue" />
+
+            <Button
+                android:id="@+id/btnCopyLogs"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/button_background_selector"
+                android:drawableLeft="@drawable/logs_shape"
+                android:paddingLeft="23dp"
+                android:shadowColor="@android:color/transparent"
+                android:text="Copy Logs"
+                android:textAllCaps="false"
+                android:drawablePadding="-28sp"
+                android:textColor="@color/color_bblue" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnManageAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vpnStatus"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textAllCaps="false"
+            android:background="@drawable/button_background_selector"
+            android:layout_marginBottom="20dp"
+            android:shadowColor="@android:color/transparent"
+            android:text="Manage your Openchan account"
+            android:textColor="@color/color_bblue" />
+
+    </LinearLayout>
+
+</com.digiapp.openchan.models.others.ViewShapedBackground>

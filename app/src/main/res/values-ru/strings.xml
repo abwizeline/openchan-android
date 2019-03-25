@@ -1,0 +1,180 @@
+<resources>
+    <string name="app_name" translatable="false">BelkaVPN</string>
+
+    <!-- Guide screens -->
+    <string-array name="guide_title">
+        <item>Максимальная скорость соединения</item>
+        <item>Доступ к заблокированному контенту</item>
+        <item>Защищенное соединение</item>
+    </string-array>
+
+    <string-array name="guide_description">
+        <item>Защитите себя от перехвата данных</item>
+        <item>Меняйте местоположение, чтобы просматривать веб-сайты со всего мира.</item>
+        <item>Пользуйтесь Интернетом безопасно в любом кафе, аэропорту или парке</item>
+    </string-array>
+    <!-- Connection strings -->
+
+    <string name="tutorial_first_title">Максимальная скорость соединения</string>
+    <string name="tutorial_first_sub">Защитите себя от перехвата данных</string>
+
+    <string name="LEVEL_START">Начато</string>
+    <string name="LEVEL_CONNECTED">Соединено</string>
+    <string name="LEVEL_AUTH_FAILED">Auth failed</string>
+    <string name="LEVEL_NONETWORK">Нет сети</string>
+    <string name="LEVEL_NOTCONNECTED">Нет соединения</string>
+    <string name="LEVEL_CONNECTING_NO_SERVER_REPLY_YET">Нет ответа от сервера</string>
+    <string name="LEVEL_WAITING_FOR_USER_INPUT">Ожидаем ввод пользователя</string>
+    <string name="LEVEL_CONNECTING_SERVER_REPLIED">Ответ от сервера</string>
+    <string name="LEVEL_VPNPAUSED">VPN остановлен</string>
+    <string name="UNKNOWN_LEVEL">Неизвестно</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Настройки</string>
+    <string name="action_check_ip">Проверить мой IP</string>
+    <string name="action_refresh_payment">Обновить страницу</string>
+    <string name="txtInfo">Secure connection hides real location and encrypts all data sent and received by your Desktop</string>
+    <string name="btnStart">ВКЛЮЧИТЬ</string>
+    <string name="btnStop">ОТКЛЮЧИТЬ</string>
+    <string name="new_version">Доступна новая версия, обновить? </string>
+    <string name="title_activity_settings">Настройки</string>
+
+    <!-- Core -->
+    <string name="txt_exit">Хотите выйти?</string>
+    <string name="txt_yes">Да</string>
+    <string name="txt_no">Нет</string>
+    <string name="txt_disconnected">ОТКЛЮЧИТЬ</string>
+    <string name="txt_connecting">Соединение</string>
+    <string name="txt_connected">Соединено</string>
+
+    <!-- Intro Fragment -->
+    <string name="start_trial">БЕСПЛАТНАЯ ПРОБНАЯ ВЕРСИЯ</string>
+
+    <!-- AppSelectorActivity -->
+    <string name="title_appselector">Соединение для приложений</string>
+
+    <!-- navigation drawer -->
+    <string name="rate_us_str">Оцените нас</string>
+    <string name="tell_your_str">Расшарьте друзьям</string>
+    <string name="follow_twitter">Follow in Twitter</string>
+    <string name="like_facebook">Лайкните на Facebook</string>
+    <string name="settings_str">Настройки</string>
+    <string name="faq_str">ЧАВО</string>
+    <string name="privacy_str">Политика конфиденциальности</string>
+    <string name="terms_str">Условия использования</string>
+    <string name="update_str">Проверить обновления</string>
+
+    <!-- Subsription -->
+    <string name="txt_protect">Защитите свой смартфон \nи Android планшет</string>
+    <string name="txt_devices">До 5 подключенных устройств \nодновременно</string>
+    <string name="billing_exp">Ваша подписка истекла</string>
+    <string name="one_year">1 Год</string>
+    <string name="six_months">6 Месяцев</string>
+    <string name="one_month">1 Месяц</string>
+    <string name="fetching_billing">Обновление InApp billing</string>
+
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_restore_purchases">
+        <item>Google Play</item>
+        <item>Промокод</item>
+        <item>Пользователь/Пароль</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+    <string name="pref_title_vibrate">Vibrate</string>
+
+    <!-- Profiles Activity -->
+    <string name="title_profiles_activity">Местоположение</string>
+    <string name="txt_update">ОБНОВИТЬ</string>
+    <string name="automatic_item">Автоматически</string>
+
+    <!-- settings screen -->
+    <string name="general_title">Основное</string>
+    <string name="one_click_title">Соединение в 1 клик</string>
+    <string name="one_click_close_title">Закрыть приложение, при подключении к VPN</string>
+    <string name="one_click_close_desc"></string>
+    <string name="one_click_desc"></string>
+    <string name="on_boot_title">Подключить при загрузке телефона</string>
+    <string name="on_boot_desc"></string>
+    <string name="connection_title">Подключение</string>
+    <string name="insecure_wifi_title">Автоматически включать VPN при незащищенном Wi-Fi</string>
+    <string name="insecure_wifi_desc"></string>
+    <string name="limitbyapps_title">Ограничить по приложениям</string>
+    <string name="split_title">Выберите приложения</string>
+    <string name="split_desc"></string>
+    <string name="about_title">Информация</string>
+    <string name="show_not_title">Показывать Пуш-уведомления</string>
+    <string name="show_not_desc"></string>
+    <string name="app_ver_title">Версия приложения</string>
+    <string name="send_logs">Отправить Логи</string>
+    <string name="sel_apps_title">Выбранные приложения</string>
+
+    <!-- general -->
+    <string name="please_wait">Ждите...</string>
+    <string name="checking_wait">Ждите...</string>
+    <string name="not_available">Не доступно</string>
+    <string name="txt_oops">Охх...</string>
+    <string name="no_internet">Нет соединения, пожалуйста проверьте Интернет</string>
+    <string name="try_again">Попробовать еще раз</string>
+    <string name="goes_wrong">Что-то пошло не так, попробуйте еще раз</string>
+    <string name="txt_dialog_title">Диалог</string>
+
+    <!-- Login screen -->
+    <string name="info_message1">Охх, что-то пошло не так, попробуйте еще раз</string>
+    <string name="restore_purch">Уже приобретено</string>
+    <string name="billing_not">Billing service unavailable on device.</string>
+    <string name="auth_failed">Ошибка входа</string>
+    <string name="no_purchases">У вас нет доступных покупок</string>
+        <string name="txt_already_purchased">УЖЕ ПРИОБРЕТЕНО</string>
+
+    <!-- openvpn service -->
+    <string name="belkav_vpn_serv_started">BelkaVPN</string>
+
+    <!-- utils -->
+    <string name="goes_wrong_profiles">Что-то не так с VPN параметрами</string>
+    <string name="cancel">Отменить</string>
+    <string name="connecting">Подключение</string>
+
+    <!-- startvpn fragment -->
+    <string name="connected">Подключено</string>
+    <string name="loading_serv">Загрузка с сервера</string>
+    <string name="auto_location">Автоматическое местоположение</string>
+
+    <!-- codes -->
+    <string name="facebook_app_id">912273795631857</string>
+    <string name="fb_login_protocol_scheme">fb912273795631857</string>
+    <string name="appsee_key">9ba4f56aebfd4358ba934f561fb4eba7</string>
+    <string name="request_google_token">982710052314-3rggq682cln6futun742pr2s30ql3ojr.apps.googleusercontent.com</string>
+
+</resources>

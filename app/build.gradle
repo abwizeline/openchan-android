@@ -1,0 +1,121 @@
+buildscript {
+    repositories {
+        google()
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+        maven { url 'https://maven.fabric.io/public' }
+        maven { url "https://jitpack.io" }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+
+    }
+}
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+
+
+android {
+    signingConfigs {
+        config {
+        }
+    }
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "com.digiapp.openchan"
+        minSdkVersion 18
+        targetSdkVersion 27
+        versionCode 29
+        versionName "1.0.3"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+
+        manifestPlaceholders = [
+                screenOrientation              : 'portrait',
+                onesignal_app_id               : '72594e8a-ecb8-40c2-8bdf-cd0d9ab85459',
+                onesignal_google_project_number: 'REMOTE'
+        ]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    dexOptions {
+        incremental true
+    }
+}
+
+def support_lib = '27.1.1';
+def firebase_lib = '11.6.2';
+
+dependencies {
+    implementation 'com.android.support:support-vector-drawable:' + support_lib
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.google.android.gms:play-services:' + firebase_lib
+    implementation 'com.onesignal:OneSignal:[3.9.1, 3.99.99]'
+    implementation 'com.google.firebase:firebase-core:' + firebase_lib
+    implementation 'com.google.android.gms:play-services-auth:' + firebase_lib
+    implementation 'com.google.firebase:firebase-auth:' + firebase_lib
+    implementation 'com.android.support:multidex:1.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:appcompat-v7:' + support_lib
+    implementation 'com.android.support:design:' + support_lib
+    implementation 'com.android.support:support-v4:' + support_lib
+    // UI
+    implementation 'io.github.inflationx:calligraphy3:3.0.0'
+    implementation 'io.github.inflationx:viewpump:1.0.0'
+    // SERVER
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+    // Room (use 1.1.0-alpha3 for latest alpha)
+    implementation('android.arch.persistence.room:runtime:1.0.0') {
+        exclude group: 'com.android.support', module: 'support-v4'
+    }
+    annotationProcessor("android.arch.persistence.room:compiler:1.0.0") {
+        exclude group: 'com.android.support', module: 'support-v4'
+    }
+    implementation 'com.orhanobut:logger:2.1.1'
+    // temporary
+    implementation project(':sweetalert')
+    // analytics
+    implementation 'com.appsee:appsee-android:+'
+    implementation 'com.appsflyer:af-android-sdk:4+@aar'
+    implementation('com.crashlytics.sdk.android:crashlytics:2.6.8@aar') {
+        transitive = true;
+    }
+    // mvp
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.hannesdorfmann.mosby3:viewstate:3.1.1' // MVP + ViewState support
+
+}

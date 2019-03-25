@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <FrameLayout
+        android:id="@+id/firstFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:text="Your primary DNS"
+            android:textAllCaps="true"
+            android:textColor="#CCCCCC" />
+
+        <EditText
+            android:id="@+id/etPrimaryDns"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
+            android:digits="0123456789."
+            android:inputType="numberDecimal"
+            android:paddingLeft="10dp"
+            android:nextFocusForward="@id/etSecondaryDns"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="18dp">
+
+            <requestFocus />
+        </EditText>
+    </FrameLayout>
+
+
+    <FrameLayout
+        app:layout_constraintTop_toBottomOf="@+id/firstFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:text="Your secondary DNS"
+            android:textAllCaps="true"
+            android:textColor="#CCCCCC" />
+
+
+        <EditText
+            android:id="@+id/etSecondaryDns"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:height="50dp"
+            android:digits="0123456789."
+            android:background="@android:color/transparent"
+            android:inputType="numberDecimal"
+            android:paddingLeft="10dp"
+            android:textSize="18dp"
+            android:textCursorDrawable="@drawable/color_cursor"
+            app:layout_constraintTop_toBottomOf="@+id/firstFrame" >
+        </EditText>
+    </FrameLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

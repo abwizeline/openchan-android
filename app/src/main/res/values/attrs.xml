@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <declare-styleable name="speed_indicator">
+        <attr name="barWidth" format="dimension"/>
+        <attr name="barColor" format="color"/>
+        <attr name="bgWidth" format="dimension"/>
+        <attr name="bgColor" format="color"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="CustomTextView">
+       <!-- <attr name="font" format="string" /> -->
+    </declare-styleable>
+
+
+    <declare-styleable name="MyCircleView">
+
+        <attr name="cub_color" format="color"/>
+        <attr name="cub_hover_color" format="color"/>
+        <attr name="cub_border_color" format="color"/>
+        <attr name="cub_icon" format="integer"/>
+        <attr name="cub_border_radius" format="dimension" />
+       <!-- <attr name="cub_fontstyle" format="string"/> -->
+        <attr name="cub_riple_effect" format="boolean"></attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="IconButton">
+        <attr name="iconSrc" format="reference" />
+        <attr name="iconSize" format="dimension" />
+        <attr name="iconPadding" format="dimension" />
+    </declare-styleable>
+</resources>

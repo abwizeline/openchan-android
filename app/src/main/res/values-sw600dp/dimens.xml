@@ -1,0 +1,9 @@
+<resources>
+
+    <dimen name="textsize_small">22sp</dimen>
+    <dimen name="textsize_medium">24sp</dimen>
+    <dimen name="textsize_large">26sp</dimen>
+    <dimen name="textsize_huge">28sp</dimen>
+    <dimen name="textsize_humongous">40sp</dimen>
+
+</resources>

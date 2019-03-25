@@ -1,0 +1,182 @@
+<resources>
+    <string name="app_name" translatable="false">BelkaVPN</string>
+
+    <!-- Guide screens -->
+    <string-array name="guide_title">
+        <item>تحسين الإتصال بالإنترنت</item>
+        <item>الدخول للمحتويات محجوب</item>
+        <item>إتصال محمي</item>
+    </string-array>
+
+    <string-array name="guide_description">
+        <item>زيادة سرعة التصفح إلى الحد الأقصى </item>
+        <item>الولوج السريع للمواقع و البرامج محظور و خاضع للرقابة </item>
+        <item>حماية الإتصال بالإنترنت و تشفير المعلومات الخاصة بك </item>
+    </string-array>
+    <!-- Connection strings -->
+
+    <string name="tutorial_first_title">تحسين الإتصال بالإنترنت</string>
+    <string name="tutorial_first_sub">زيادة سرعة التصفح إلى الحد الأقصى </string>
+
+    <string name="LEVEL_START">بدأ</string>
+    <string name="LEVEL_CONNECTED">متصل</string>
+    <string name="LEVEL_AUTH_FAILED">فشلت المصادقة</string>
+    <string name="LEVEL_NONETWORK">لا يوجد شبكة</string>
+    <string name="LEVEL_NOTCONNECTED">غير متصل</string>
+    <string name="LEVEL_CONNECTING_NO_SERVER_REPLY_YET">الخادم لا يستجيب</string>
+    <string name="LEVEL_WAITING_FOR_USER_INPUT">في إنتظار المستخدم</string>
+    <string name="LEVEL_CONNECTING_SERVER_REPLIED">ثم الرد من قبل الخادم</string>
+    <string name="LEVEL_VPNPAUSED">VPN توقف</string>
+    <string name="UNKNOWN_LEVEL">غير معروف</string>
+    <string name="hello_blank_fragment">مرحباّ، قطعة فارغة</string>
+    <string name="title_activity_main">النشاط الرئيسي</string>
+    <string name="navigation_drawer_open">إفتح درج التنقل</string>
+    <string name="navigation_drawer_close">أغلق درج التنقل</string>
+    <string name="action_settings">الإعدادات</string>
+    <string name="action_check_ip">إفحص عنوان البروتوكول الخاص بي</string>
+    <string name="txtInfo">الإتصال المحمي يقوم بإخفاء موقعك الحقيقي و تشفير جميع البيانات المرسلة والمستلمة عن طريق سطح المكتب</string>
+    <string name="btnStart">توصيل</string>
+    <string name="btnStop">قطع الإتصال</string>
+    <string name="new_version">يتوفر إصدار جديد، هل ترغب بالتحديث؟</string>
+    <string name="title_activity_settings">الإعدادات</string>
+
+    <!-- Core -->
+    <string name="txt_exit">هل ترغب بالخروج؟</string>
+    <string name="txt_yes">نعم</string>
+    <string name="txt_no">لا</string>
+    <string name="txt_disconnected">قطع الإتصال</string>
+    <string name="txt_connecting">جاري التوصيل</string>
+    <string name="txt_connected">متصل</string>
+
+    <!-- Intro Fragment -->
+    <string name="start_trial">إبدأ التجربة المجانية لمدة 7 أيام</string>
+
+    <!-- AppSelectorActivity -->
+    <string name="title_appselector">الإتصال لكل برنامج</string>
+
+    <!-- navigation drawer -->
+    <string name="rate_us_str"> قم بتقيمنا</string>
+    <string name="tell_your_str">أخبر أصدقائك</string>
+    <string name="follow_twitter">تابعنا على تويتر</string>
+    <string name="like_facebook">إعجاب على فيسبوك</string>
+    <string name="settings_str">الإعدادات</string>
+    <string name="faq_str">الأسئلة المتكررة</string>
+    <string name="privacy_str">سياسة الخصوصية</string>
+    <string name="terms_str">شروط الخدمة</string>
+    <string name="update_str">إبحث عن تحديثات</string>
+
+    <!-- Subsription -->
+    <string name="txt_protect">و جهازك اللوحي بنظام أندرويد قم بحماية هاتفك الأندرويد</string>
+    <string name="txt_devices"> حتى 5 أجهزة متصلة في نفس الوقت </string>
+    <string name="billing_exp">إنتهت صلاحية الدفع الخاصة بك</string>
+    <string name="one_year">سنة واحدة</string>
+    <string name="six_months">6 أشهر</string>
+    <string name="one_month">شهر واحد</string>
+    <string name="fetching_billing">جلب بيانات الدفع داخل التطبيق</string>
+
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">عام</string>
+    <string name="pref_title_social_recommendations">تفعيل التوصيات الإجتماعية</string>
+    <string name="pref_description_social_recommendations">
+ توصيات الإتصال بالأشخاص بناءّ على سجل الرسائل الخاص بك
+    </string>
+
+    <string name="pref_title_display_name">إعرض الإسم</string>
+    <string name="pref_default_display_name">جون سميث</string>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">بيانات&amp; مزامنة</string>
+
+    <string-array name="list_preference_entries">
+        <item>إدخال 1</item>
+        <item>إدحال 2</item>
+        <item>إدخال 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="list_restore_purchases">
+        <item>متجر قوقل</item>
+        <item>الكود الترويجي</item>
+        <item>البريد الإلكتروني/كلمة السر</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+    <string name="pref_title_system_sync_settings">النظام يقوم بمزامنة الإعدادات</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">التنبيهات</string>
+    <string name="pref_title_new_message_notifications">تنبيهات الرسائل الجديدة</string>
+    <string name="pref_title_ringtone">نغمة الرنين</string>
+    <string name="pref_ringtone_silent">صامت</string>
+    <string name="pref_title_vibrate">إهتزاز</string>
+
+    <!-- Profiles Activity -->
+    <string name="title_profiles_activity">المواقع</string>
+    <string name="txt_update">تحديث</string>
+    <string name="automatic_item">بشكل تلقائي</string>
+
+    <!-- settings screen -->
+    <string name="general_title">عام</string>
+    <string name="one_click_title">الإتصال بضغطة واحدة</string>
+    <string name="one_click_close_title">أغلق البرنامج عند الإتصال</string>
+    <string name="one_click_close_desc">VPN قم بإغلاق البرنامج عند الإتصال بنجاح في</string>
+    <string name="one_click_desc">قم بالإتصال عند بدأ البرنامج</string>
+    <string name="on_boot_title">قم بالإتصال عند بدأ التشغيل</string>
+    <string name="on_boot_desc">قم بالإتصال عند بدأ تشغيل الجهاز</string>
+    <string name="connection_title">الإتصال</string>
+    <string name="insecure_wifi_title">قم بالإتصال تلقائيا على الشبكات اللاسكية غير المحمية</string>
+    <string name="insecure_wifi_desc">BelkaVPN سيقوم بكشف أنك متصل بشبكة لاسلكية مفتوحة و سيقوم تلقائياّ ببدأ شبكة إتصال إفتراضية مع نفق محمي</string>
+    <string name="limitbyapps_title">تحديد التطبيقات</string>
+    <string name="split_title">قم بفصل التطبيقات</string>
+    <string name="split_desc">VPNقم بإختيار التطبيقات التي ستستخدم </string>
+    <string name="about_title">حول</string>
+    <string name="show_not_title">إعرض التنبيهات</string>
+    <string name="show_not_desc">قم بعرض التنبيهات مع تفاصيل الإتصال</string>
+    <string name="app_ver_title">نسخة البرنامج</string>
+    <string name="send_logs">أرسل السجلات للمطورين</string>
+    <string name="sel_apps_title">البرامج المحددة</string>
+
+    <!-- general -->
+    <string name="please_wait">فضلاّ إنتظر...</string>
+    <string name="checking_wait">يتم التحقق، فضلاّ إنتظر</string>
+    <string name="not_available">غير متاح</string>
+    <string name="txt_oops">عذراّ...</string>
+    <string name="no_internet">لا يوجد إنترنت، فضلاّ تحقق من الإتصال</string>
+    <string name="try_again">حاول مجدداّ</string>
+    <string name="goes_wrong">حدث خطأ ما، فضلاّ حاول مجدداّ</string>
+    <string name="txt_dialog_title">حوار</string>
+
+    <!-- Login screen -->
+    <string name="info_message1">عذراّ، حدث خطأ ما أثناء تسجيل الدحول، فضلاّ حاول مجدداّ</string>
+    <string name="restore_purch">إستعادة المشتريات</string>
+    <string name="billing_not">خدمة الدفع غير متوفرة على الجهاز.</string>
+    <string name="auth_failed">فشل التفويض..</string>
+    <string name="no_purchases">ليس لديك أي مشتريات</string>
+    <string name="txt_already_purchased">مشترى بالفعل</string>
+
+    <!-- openvpn service -->
+    <string name="belkav_vpn_serv_started">Belka VPN بدأ خدمة</string>
+
+    <!-- utils -->
+    <string name="goes_wrong_profiles">VPN حدث خطأ ما في الملف الشخصي ل</string>
+    <string name="cancel">إلغاء</string>
+    <string name="connecting">يتم التوصيل</string>
+
+    <!-- startvpn fragment -->
+    <string name="connected">متصل</string>
+    <string name="loading_serv">الخادم paramsيتم تحميل </string>
+    <string name="auto_location">موقع تلقائي</string>
+
+    <!-- codes -->
+    <string name="facebook_app_id">912273795631857</string>
+    <string name="fb_login_protocol_scheme">fb912273795631857</string>
+    <string name="appsee_key">9ba4f56aebfd4358ba934f561fb4eba7</string>
+    <string name="request_google_token">982710052314-3rggq682cln6futun742pr2s30ql3ojr.apps.googleusercontent.com</string>
+
+</resources>
