@@ -1,0 +1,23 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/caches/
+.idea/libraries/
+sweetalert/build/generated/assets/
+sweetalert/build/generated/res/
+sweetalert/build/generated/source/aidl/
+sweetalert/build/generated/source/rs/
+sweetalert/build/intermediates/check-manifest/
+sweetalert/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/
+sweetalert/build/intermediates/incremental/packageDebugResources/aapt-temp/
+sweetalert/build/intermediates/incremental/packageDebugResources/stripped.dir/
+sweetalert/build/intermediates/incremental/packageReleaseResources/aapt-temp/
+sweetalert/build/intermediates/incremental/packageReleaseResources/stripped.dir/
+sweetalert/build/intermediates/incremental/release-mergeJniLibs/zip-cache/
+sweetalert/build/intermediates/intermediate-jars/debug/jni/
+sweetalert/build/intermediates/intermediate-jars/release/jni/
+sweetalert/build/intermediates/jniLibs/
+sweetalert/build/intermediates/lint/
+sweetalert/build/intermediates/packaged-aidl/
+sweetalert/build/intermediates/packagedAssets/
+sweetalert/build/intermediates/public_res/
+sweetalert/build/intermediates/rs/
+sweetalert/build/intermediates/shaders/
