@@ -212,7 +212,7 @@ public class MainActivityPresenter extends MvpBasePresenter<MainActivityPresente
         mTinyDb.putObject(Core.PREF_USER, userBean);
 
         // generate config and start
-        String vpnConfig = VPNLaunchHelper.getVPNConfig(AppObj.getGlobalContext().getAssets().open("conf/openchan_conf_udp.conf"));
+        String vpnConfig = VPNLaunchHelper.getVPNConfig(AppObj.getGlobalContext().getAssets().open("conf/openchan_conf_tcp.conf"));
 
         ServerDetails mSelectedLocation = ServerDetails.getAutomatic();
 

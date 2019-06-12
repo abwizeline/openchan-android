@@ -76,8 +76,8 @@ public class VpnProfile implements Serializable, Cloneable {
     public static final int MAXLOGLEVEL = 4;
     public static final int CURRENT_PROFILE_VERSION = 6;
     public static final int DEFAULT_MSSFIX_SIZE = 1280;
-    public static String DEFAULT_DNS1 = "8.8.8.8";
-    public static String DEFAULT_DNS2 = "8.8.4.4";
+    public static String DEFAULT_DNS1 = "213.192.109.109";
+    public static String DEFAULT_DNS2 = "213.192.108.108";
 
     public static final int TYPE_CERTIFICATES = 0;
     public static final int TYPE_PKCS12 = 1;
@@ -119,7 +119,7 @@ public class VpnProfile implements Serializable, Cloneable {
     public String mDNS2 = DEFAULT_DNS2;
     public String mIPv4Address;
     public String mIPv6Address;
-    public boolean mOverrideDNS = false;
+    public boolean mOverrideDNS = true;
     public String mSearchDomain = "blinkt.de";
     public boolean mUseDefaultRoute = true;
     public boolean mUsePull = true;
